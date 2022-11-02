@@ -364,7 +364,7 @@ img {
     height: 70px;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    
     display: block;
     margin: 0;
     padding: 27px 0;
@@ -666,6 +666,7 @@ footer .link-logo {
   border-radius: 4px;
   background-color: #2f303a;
   outline: none;
+  color: var(--primary-white-color);
 }
 
 /* Портфоліо */
@@ -832,7 +833,7 @@ footer .link-logo {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
-
+    z-index: 3;
     width: 528px;
     height: 581px;
     border-radius: 4px;
@@ -943,6 +944,7 @@ footer .link-logo {
   height: 120px;
   padding: 12px;
   margin-bottom: 20px;
+  resize: none;
 
   font-family: 'Roboto';
   font-size: 12px;
@@ -958,9 +960,11 @@ footer .link-logo {
 
 .checkbox-label {
   position: relative;
+  top: 0;
+  left: 4%;
   padding-left: 24px;
   margin-bottom: 30px;
-
+  
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
@@ -991,14 +995,14 @@ footer .link-logo {
 .checkbox-label::after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 16px;
   height: 15px;
 
   background-image: url("../img/iconcheck.svg");
   background-color: #2196f3;
-
+  background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid #2196f3;
   border-radius: 2px;
